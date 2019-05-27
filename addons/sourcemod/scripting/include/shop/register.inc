@@ -57,6 +57,16 @@ native CategoryId Shop_RegisterCategory(const char[] category, const char[] name
 								Shop_CategorySelectCallback cat_select=INVALID_FUNCTION);
 
 /**
+ *  Set's the parent category id.
+ *  -
+ *  @param category_id			Category id for which the parent category should be changed
+ *  @param parent_category_id	Parent category id.
+ *  -
+ *  @noreturn
+ */
+native void Category_SetParentCategory(CategoryId category_id, CategoryId parent_category_id);
+
+/**
  *	Starts an item to register
  *	-
  *	@param category_id			Category id to register an item for
